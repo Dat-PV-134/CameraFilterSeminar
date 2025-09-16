@@ -7,6 +7,7 @@ import com.rekoj134.camerafilterseminar.databinding.ActivityMainBinding
 import com.rekoj134.camerafilterseminar.filter_camera.FilterCameraActivity
 import com.rekoj134.camerafilterseminar.filter_image.FilterImageActivity
 import com.rekoj134.camerafilterseminar.fish_eyes.FishEyesActivity
+import com.rekoj134.camerafilterseminar.fish_eyes_cameraX.FishEyesCameraXActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -26,6 +27,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnFishEyes.setOnClickListener {
             startActivity(Intent(this@MainActivity, FishEyesActivity::class.java))
+        }
+
+        binding.btnFishEyesCameraX.setOnClickListener {
+            startActivity(Intent(this@MainActivity, FishEyesCameraXActivity::class.java))
         }
     }
 }
