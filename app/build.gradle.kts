@@ -41,6 +41,7 @@ android {
 
 dependencies {
     implementation(project(":cameraview"))
+    implementation("com.google.mediapipe:tasks-vision:0.10.26")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
